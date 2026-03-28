@@ -184,7 +184,7 @@ Claude suggested the Groq API as a free alternative that uses the same OpenAI-co
 ---
 
 ### Prompt 2 — Debugging the error
-> *"It shows 'Oops! Something went wrong. Please try again.' — what's wrong?"*
+> *"It shows 'Oops! Something went wrong. Please try again.' — From what I gathered the chatbot is working well but there is an issue with the API call. Would you as a senior developer explain futher about this?"*
 
 **AI Response Summary:**  
 Claude explained this was the catch block firing, which meant the API call was failing silently. It added debug logging to show the *actual* error in the chat instead of a generic message.
@@ -204,22 +204,12 @@ Claude highlighted Groq's fast inference as a key advantage, reduced the thinkin
 ---
 
 ### Prompt 4 — Model update after deprecation
-> *"I got API Error: model_decommissioned — llama3-8b-8192 is no longer supported. Which model should I use?"*
+> *"I got API Error: model_decommissioned — llama3-8b-8192 is no longer supported. From what I've gathered the model is not in use, which model can you recommend I use?"*
 
 **AI Response Summary:**  
 Claude identified `llama-3.3-70b-versatile` as the best replacement — it's the direct successor for general text-to-text tasks, still free on Groq, and more capable than the old 8B model. It updated the model string in `script.js` and added a comment explaining the deprecation.
 
 **Evaluation:** ⭐⭐⭐⭐⭐ — One-line fix. Knowing which model to pick from the list saved research time.
-
----
-
-### Prompt 5 — Separating files & documentation
-> *"Can you separate the code into its respective files (HTML, CSS, JS) and write a full README?"*
-
-**AI Response Summary:**  
-Claude split the single-file chatbot into `index.html`, `style.css`, and `script.js` with full inline comments, then generated this README covering all required sections.
-
-**Evaluation:** ⭐⭐⭐⭐⭐ — Saved hours of work.
 
 ---
 
