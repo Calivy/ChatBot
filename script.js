@@ -57,7 +57,7 @@ const generateResponse = (incomingChatLi, timerEl, startTime) => {
     // POST request to Groq API (100% FREE)
     // Get your FREE API key at: https://console.groq.com
     // Sign up with Google/GitHub → API Keys → Create API Key
-    const API_KEY = "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"; // 🔑 Replace with key from console.groq.com
+    const API_KEY = "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"; // 🔑 Replace with key from console.groq.com
     const API_URL = "https://api.groq.com/openai/v1/chat/completions";
 
     fetch(API_URL, {
